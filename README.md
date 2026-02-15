@@ -8,7 +8,7 @@
 > [![Bilibili](https://img.shields.io/badge/Bilibili-Video-blue?logo=bilibili&logoColor=white)](https://www.bilibili.com/video/BV141ZtBBEUr/) 👈 点击观看详细演示视频
 
 ## 📖 Introduction (项目简介)
-本项目由 **深圳大学 AutoLeader 团队** 开发，实现了一套用于自动驾驶的**异构计算架构**。本项目核心在于打通 Linux 高性能计算平台与微控制器实时控制系统之间的壁垒。
+本项目由 **深圳大学 AutoLeader “绝不加班队“** 开发，实现了一套用于自动驾驶的**异构计算架构**。本项目核心在于打通 Linux 高性能计算平台与微控制器实时控制系统之间的壁垒。
 
 - **Upper Computer**: Horizon **RDK X5** (Ubuntu 20.04/ROS2) - 负责车道线感知与高层路径规划。
 - **Lower Controller**: **STM32F103** - 负责底层硬件控制与 PID 实时闭环。
