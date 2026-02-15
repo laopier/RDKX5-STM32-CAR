@@ -2,6 +2,7 @@
 # 基于 RDK X5 (边缘AI) 与 STM32 的异构视觉循迹机器人
 
 ![Demo](2月15日.gif)
+[![Bilibili](https://img.shields.io/badge/Bilibili-Video-blue?logo=bilibili&logoColor=white)](https://www.bilibili.com/video/BV141ZtBBEUr/) 👈 **点击观看详细演示视频**
 
 ## 📖 Introduction (项目简介)
 This project implements a **heterogeneous computing architecture** for autonomous driving, developed by a team of 4 students from Shenzhen University
@@ -13,10 +14,10 @@ This project implements a **heterogeneous computing architecture** for autonomou
 ## 👥 Team & Roles (团队分工)
 | Member | Role | Responsibilities |
 | :--- | :--- | :--- |
-| [廖宏商] | System Integration & Control | PID Tuning, RDK X5 Integration. | Mechanical Design | Chassis Modeling (SolidWorks), 3D Printing, Structural Optimization. |
+| 廖宏商 | System Integration & Control | PID Tuning, RDK X5 Integration. | Mechanical Design | Chassis Modeling (SolidWorks), 3D Printing, Structural Optimization. |
 | 彭林海 | **Vision & Full Stack** | **Lane Detection (AI), Web Dashboard Design, Real-time Web-Client Communication (WebSocket/HTTP).** |
-| [蔡锐潜] | Hardware Engineer | Circuit Design, PCB Soldering, Power Management, Sensor Calibration. |
-| [种雨佳] | Model Training & Tuning, Project Documentation, Visual Design |
+| 蔡锐潜 | Hardware Engineer | Circuit Design, PCB Soldering, Power Management, Sensor Calibration. |
+| 种雨佳 | Model Training & Tuning, Project Documentation, Visual Design |
 
 ## 🛠️ Tech Stack (技术栈)
 - **Edge AI Platform**: Horizon RDK X5 (BPU Acceleration)
