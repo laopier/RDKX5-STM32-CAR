@@ -2,7 +2,7 @@
 # 基于 RDK X5 (边缘AI) 与 STM32 的异构视觉循迹机器人
 
 ![Demo](2月15日.gif)
-[![Bilibili](https://img.shields.io/badge/Bilibili-Video-blue?logo=bilibili&logoColor=white)](https://www.bilibili.com/video/BV141ZtBBEUr/) 👈 **点击观看详细演示视频**
+> 📺 **Video Demo on Bilibili**: [【深圳大学AutoLeader】基于RDKX5+STM32的视觉循迹与避障小车](https://www.bilibili.com/video/BV141ZtBBEUr/)
 
 ## 📖 Introduction (项目简介)
 This project implements a **heterogeneous computing architecture** for autonomous driving, developed by a team of 4 students from Shenzhen University
