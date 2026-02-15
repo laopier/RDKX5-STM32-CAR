@@ -30,7 +30,7 @@
 - **Control Algorithm**: Incremental PID Control
 - **Mechanical Design**: Custom 3D printed chassis (SolidWorks)
 
-## 💻 My Key Contributions (我的核心工作)
+## 💻 My Key Contributions (廖宏商的核心工作)
 作为项目**嵌入式与系统集成核心负责人**，我主导了跨平台数据链路与控制系统的开发：
 
 1.  **System Integration & Protocol (系统集成与协议)**: 
