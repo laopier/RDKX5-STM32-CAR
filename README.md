@@ -2,22 +2,25 @@
 # 基于 RDK X5 (边缘AI) 与 STM32 的异构视觉循迹机器人
 
 ![Demo](2月15日.gif)
+
 > 📺 **Video Demo on Bilibili**: [【深圳大学AutoLeader】基于RDKX5+STM32的视觉循迹与避障小车](https://www.bilibili.com/video/BV141ZtBBEUr/)
+> 
+> [![Bilibili](https://img.shields.io/badge/Bilibili-Video-blue?logo=bilibili&logoColor=white)](https://www.bilibili.com/video/BV141ZtBBEUr/) 👈 点击观看详细演示视频
 
 ## 📖 Introduction (项目简介)
-This project implements a **heterogeneous computing architecture** for autonomous driving, developed by a team of 4 students from Shenzhen University
+本项目由 **深圳大学 AutoLeader 团队** 开发，实现了一套用于自动驾驶的**异构计算架构**。本项目核心在于打通 Linux 高性能计算平台与微控制器实时控制系统之间的壁垒。
 
-- **Upper Computer**: Horizon **RDK X5** (Ubuntu 20.04/ROS2) - Handles high-performance AI inference (Lane detection) and path planning.
-- **Lower Controller**: **STM32F103** - Handles real-time motion control (PID) and sensor data acquisition.
-- **Communication**: Custom UART protocol for high-speed command transmission.
+- **Upper Computer**: Horizon **RDK X5** (Ubuntu 20.04/ROS2) - 负责车道线感知与高层路径规划。
+- **Lower Controller**: **STM32F103** - 负责底层硬件控制与 PID 实时闭环。
+- **Communication**: 自定义 UART 协议，实现上位机与下位机的高速指令传输。
 
 ## 👥 Team & Roles (团队分工)
 | Member | Role | Responsibilities |
 | :--- | :--- | :--- |
-| 廖宏商 | System Integration & Control | PID Tuning, RDK X5 Integration. | Mechanical Design | Chassis Modeling (SolidWorks), 3D Printing, Structural Optimization. |
-| 彭林海 | **Vision & Full Stack** | **Lane Detection (AI), Web Dashboard Design, Real-time Web-Client Communication (WebSocket/HTTP).** |
-| 蔡锐潜 | Hardware Engineer | Circuit Design, PCB Soldering, Power Management, Sensor Calibration. |
-| 种雨佳 | Model Training & Tuning, Project Documentation, Visual Design |
+| 彭林海 | Team Leader & Vision | Project Management, Lane Detection Algorithm, Web Dashboard Design. |
+| 廖宏商 | Lead Embedded & Systems | STM32 Firmware, UART Protocol Design, PID Control, System Integration & Chassis Design. |
+| 蔡锐潜 | Hardware Engineer | Circuit Design, PCB Layout & Soldering, Power Management. |
+| 种雨佳 | AI & Design | Model Training & Tuning, Logo Design, Project Documentation. |
 
 ## 🛠️ Tech Stack (技术栈)
 - **Edge AI Platform**: Horizon RDK X5 (BPU Acceleration)
@@ -27,18 +30,26 @@ This project implements a **heterogeneous computing architecture** for autonomou
 - **Control Algorithm**: Incremental PID Control
 - **Mechanical Design**: Custom 3D printed chassis (SolidWorks)
 
-## ⚙️ System Architecture (系统架构)
-`[Camera] -> [RDK X5 BPU] -> (UART) -> [STM32] -> (PWM) -> [Motors]`
-
 ## 💻 My Key Contributions (我的核心工作)
-As the member responsible for **Control & Integration**, I focused on bridging the gap between AI and Motion:
-1.  **Protocol Design**: Designed a robust frame header/footer protocol to prevent data packet loss between Linux (RDK X5) and MCU (STM32).
-2.  **Driver Optimization**: Rewrote the STM32 serial interrupt handler to support high-frequency control commands (100Hz).
-3.  **Closed-loop Control**: Implemented and tuned the PID algorithm to ensure the car tracks the lane smoothly without oscillation.
-4.  **System Debugging**: Solved the signal interference issues during the hardware integration phase.
-5.  **Mechanical Design (SolidWorks)**:- Designed a **modular chassis** to securely mount the RDK X5 computing unit and STM32 controller.
-    
-  
+作为项目**嵌入式与系统集成核心负责人**，我主导了跨平台数据链路与控制系统的开发：
+
+1.  **System Integration & Protocol (系统集成与协议)**: 
+    - 针对 Linux (RDK X5) 与 MCU (STM32) 的异构通信，设计了健壮的 **UART 帧头帧尾协议**，有效解决了高频通信下的数据丢包问题。
+2.  **Firmware Development (固件开发)**: 
+    - 重写了 STM32 **串口中断处理逻辑**，支持来自上位机 100Hz 的实时控制指令，显著降低了系统控制延时。
+3.  **Advanced Control (闭环控制)**: 
+    - 实现了**增量式 PID 算法**。针对小车在视觉循迹中的动态响应，独立完成了参数整定，确保小车在循迹过程中平滑过弯。
+4.  **Mechanical Design (机械设计)**:
+    - 基于 SolidWorks 设计了**模块化底盘**，确保了 RDK X5 与 STM32 的稳固安装，并兼顾了传感器视野与散热需求。
+5.  **System Debugging (系统调试)**: 
+    - 解决了硬件集成过程中的信号干扰与电平转换问题，确保了系统的全链路稳定性。
 
 ---
-**Project Status**: Completed (Winter 2026)
+
+## 👤 Author (作者信息)
+- **Name**: **廖宏商**
+- **Institution**: 深圳大学机电与控制工程学院 (2025级本科生)
+- **GitHub**: [@laopier](https://github.com/laopier)
+- **Email**: [2998272181@qq.com]
+
+> **Project Status**: Completed (Winter 2026)
