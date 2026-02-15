@@ -25,7 +25,7 @@
 ## 🛠️ Tech Stack (技术栈)
 - **Edge AI Platform**: Horizon RDK X5 (BPU Acceleration)
 - **Embedded Control**: STM32F103C8T6 (Keil MDK)
-- **Hardware Design**: **Custom PCB Layout** (EasyEDA/Altium) & Power Management
+- **Hardware Design**: **Custom PCB Layout** (嘉立创EDA) & Power Management
 - **Vision Algorithm**: OpenCV & Deep Learning (BPU deployment)
 - **Control Algorithm**: Incremental PID Control
 - **Mechanical Design**: Custom 3D printed chassis (SolidWorks)
