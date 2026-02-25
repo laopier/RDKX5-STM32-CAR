@@ -20,7 +20,7 @@
 | 彭林海 | Team Leader & Vision | Project Management, Lane Detection Algorithm, Web Dashboard Design. |
 | 廖宏商 | Lead Embedded & Systems | STM32 Firmware, UART Protocol Design, PID Control, System Integration & Chassis Design. |
 | 蔡锐潜 | Hardware Engineer | Circuit Design, PCB Layout & Soldering, Power Management. |
-| 种雨佳 | AI & Design | Model Training & Tuning, Logo Design, Project Documentation. |
+| 钟雨佳 | AI & Design | Model Training & Tuning, Logo Design, Project Documentation. |
 
 ## 🛠️ Tech Stack (技术栈)
 - **Edge AI Platform**: Horizon RDK X5 (BPU Acceleration)
